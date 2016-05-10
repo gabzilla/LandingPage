@@ -1,3 +1,5 @@
+<!-- http://stackoverflow.com/questions/8886367/running-chrome-with-extension-in-kiosk-mode --> 
+
 <html>
 
 <head>
@@ -17,6 +19,11 @@
 <div id="inner-content">
 
 Select the titlebar to enable:<br/>
+form action="" method="get" onsubmit="return goTo()">
+  <label for="url">Enter the URL:
+    <input type="text" name="url" id="url">
+    <input type="submit" value="Submit">
+</form>
 <input type="checkbox" id="top-box">Top Titlebar
 <br/>
 <input type="checkbox" id="bottom-box">Bottom Titlebar
