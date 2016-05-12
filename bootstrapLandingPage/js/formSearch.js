@@ -17,10 +17,10 @@
 // $("#WFF").click(function() {
 //     window.location="www.yourwebsite.com/url/here/"+$("#text").val();
 // })
-    function goTo() {
-      var url = document.forms[0].url.value;
-      myWindow = window.open(url, "", "width=800,height=800");
-      myWindow.document.write("<div src='url'></div>");
-      myWindow.focus(); // sends window to front
-      return false;
-    }
+function goTo() {
+  var url = document.forms[0].url.value;
+  myWindow = window.open(url, "_blank", "width=1200,height=1200");
+  // myWindow.document.write("<div src='url'></div>"); <--- DELETE THIS LINE LOOKS LIKE ITS THE ISSUE!!!
+  myWindow.focus(); // sends window to front
+  return false;
+}
