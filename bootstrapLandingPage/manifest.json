@@ -12,11 +12,8 @@
 		"128": "img/dounutCat.png" 
 	},
 
-  "app": {
-    "background": {
-      "scripts": ["background.js"]
-    }
-  },
+
+
 	"browser_action": {
 		"default_icon": {                    
 			"19": "img/dounutCat.png",          
